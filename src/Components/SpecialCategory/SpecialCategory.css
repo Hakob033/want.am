@@ -1,0 +1,53 @@
+.Special {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  background-color: white;
+  margin-top: 40px;
+}
+
+.SpecialChild {
+  width: 67%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px; /* Spacing between cards */
+}
+
+.SpecialCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.SpecialCard img {
+  height: 70px;
+  width: 70px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.SpecialCardInfo {
+  padding: 15px;
+}
+
+.SpecialCardInfo h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.SpecialCardInfo p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.SpecialCardInfo span {
+  font-size: 16px;
+  color: #5c67f2; /* Blue color similar to the button color */
+}
