@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  gap: 20px; /* Spacing between cards */
+  gap: 20px;
 }
 
 .SpecialCard {
@@ -23,8 +23,13 @@
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.SpecialCard:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
 .SpecialCard img {
   height: 70px;
   width: 70px;
@@ -39,6 +44,10 @@
   font-size: 18px;
   color: #333;
   margin-bottom: 10px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
 }
 
 .SpecialCardInfo p {
@@ -49,5 +58,5 @@
 
 .SpecialCardInfo span {
   font-size: 16px;
-  color: #5c67f2; /* Blue color similar to the button color */
+  color: #5c67f2;
 }
