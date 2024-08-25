@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.MainBanner {
+  margin-top: 40px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.MainBannerChild {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Round {
+  background-color: rgb(98, 101, 98);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.Round:hover {
+  background-color: #6967d3;
+}
