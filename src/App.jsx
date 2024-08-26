@@ -1,12 +1,10 @@
 import "./App.css";
-import GiftComponent from "./Components/GIftComponent/GiftComponent";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import NavBar from "./Components/NavBar/NavBar";
 import SelectMainBanner from "./Components/SelectMainBanner/SelectMainBanner";
 import SpecialCategory from "./Components/SpecialCategory/SpecialCategory";
 import Tools from "./Components/Tools/Tools";
-import data from "./data";
 
 function App() {
   return (
@@ -17,6 +15,7 @@ function App() {
       <Main></Main>
       <SelectMainBanner></SelectMainBanner>
       <SpecialCategory></SpecialCategory>
+<<<<<<< HEAD
       <GiftComponent
         data={data.requested}
         title={data.titles[0]}
@@ -35,6 +34,8 @@ function App() {
           ></GiftComponent>
         );
       })}
+=======
+>>>>>>> parent of b30f104 (adding gifts category)
     </>
   );
 }
