@@ -20,7 +20,21 @@ function App() {
       <GiftComponent
         data={data.requested}
         title={data.titles[0]}
+        hasTitle={true}
       ></GiftComponent>
+      {data.newGifts.map((val, i) => {
+        let bool = true;
+        if (i >= 1) {
+          bool = false;
+        }
+        return (
+          <GiftComponent
+            data={val}
+            hasTitle={bool}
+            title={data.titles[1]}
+          ></GiftComponent>
+        );
+      })}
     </>
   );
 }

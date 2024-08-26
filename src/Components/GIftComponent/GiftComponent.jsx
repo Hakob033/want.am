@@ -3,9 +3,11 @@ import "./GiftComponent.css";
 export default function GiftComponent(props) {
   return (
     <div className="GiftCategoty">
-      <div className="title">
-        <h2>{props.title}</h2>
-      </div>
+      {props.hasTitle ? (
+        <div className="title">
+          <h2>{props.title}</h2>
+        </div>
+      ) : null}
       <div className="GiftChild">
         {props.data.map((val) => {
           const imageUrl = new URL(
